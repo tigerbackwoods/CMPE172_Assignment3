@@ -40,7 +40,7 @@ patternStream.on('readable', function() {
 
 patternStream.on('end', function() {
 	console.log("\n\nOutput :");
-	console.log(results);
+	console.log(results + "\n\n");
 
 
 });
