@@ -23,7 +23,7 @@ program
     
 // Create an input stream from the file system.
 var inputStream = fs.createReadStream( "input-sensor.txt" );
-console.log("\n\nInput :");
+console.log("\nInput :");
 inputStream.pipe(process.stdout);
 
 // Create a Pattern Matching stream that will run through the input and find matches 
@@ -39,8 +39,8 @@ patternStream.on('readable', function() {
 });
 
 patternStream.on('end', function() {
-	console.log("\n\nOutput :");
-	console.log(results + "\n\n");
+	console.log("\nOutput :");
+	console.log(results);
 
 
 });
